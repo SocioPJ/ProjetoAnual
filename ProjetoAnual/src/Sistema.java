@@ -13,6 +13,9 @@ public class Sistema {
         System.out.println("\n");
         Sistema.comprarJogo(conta1, jogo_dbd);
         System.out.println(conta1);
+        Sistema.comprarJogo(conta2, jogo_dbd);
+        conta2.depositar(75);
+        System.out.println(conta2);
 
         
         
