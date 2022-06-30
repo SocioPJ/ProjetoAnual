@@ -6,17 +6,22 @@ public class Sistema {
         Conta conta1 = new Conta(usuario1, "senha12355", 0);
         Usuario usuario2 = new Usuario("Maria","gordolazuado@spotcred.com.br", "09/10/1985");
         Conta conta2 = new Conta(usuario2, "fefe6969xoxo", 0);
-        Jogo jogo_dbd = new Jogo("Dead By Daylight",EnumTipoDeJogo.HORROR, EnumPlataforma.PC, 1, "Jogo pra irritar o gordola", 100.00);
+        Jogo Dead_by_Daylight = new Jogo("Dead By Daylight",EnumTipoDeJogo.HORROR, EnumPlataforma.PC, 1, "Jogo pra irritar o gordola", 100.00);
+        Jogo Phasmophobia
         conta1.depositar(1000);
         System.out.println(conta1);
-        System.out.println(jogo_dbd);
+        System.out.println(Dead_by_Daylight);
         System.out.println("\n");
-        Sistema.comprarJogo(conta1, jogo_dbd);
+        Sistema.comprarJogo(conta1, Dead_by_Daylight);
         System.out.println(conta1);
-        Sistema.comprarJogo(conta2, jogo_dbd);
+        Sistema.comprarJogo(conta2, Dead_by_Daylight);
         conta2.depositar(75);
         System.out.println(conta2);
         conta1.visualizarJogos();
+        conta2.visualizarJogos();
+        conta2.depositar(500);
+        Sistema.comprarJogo(conta2, Dead_by_Daylight);
+        conta2.visualizarJogos();
         
         
     }
