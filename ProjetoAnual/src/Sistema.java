@@ -6,8 +6,8 @@ public class Sistema {
         Conta conta1 = new Conta(usuario1, "senha12355", 0);
         Usuario usuario2 = new Usuario("Maria","gordolazuado@spotcred.com.br", "09/10/1985");
         Conta conta2 = new Conta(usuario2, "fefe6969xoxo", 0);
-        Jogo Dead_by_Daylight = new Jogo("Dead By Daylight",EnumTipoDeJogo.HORROR, EnumPlataforma.PC, 1, "Jogo pra irritar o gordola", 100.00);
-        Jogo Phasmophobia
+        Jogo Dead_by_Daylight = new Jogo("Dead By Daylight",EnumTipoDeJogo.HORROR, EnumPlataforma.PC, EnumQuantidadeJogadores.MULTIPLAYER, "Jogo pra irritar o gordola", 100.00);
+        Jogo Phasmophobia = new Jogo("Phasmophobia",EnumTipoDeJogo.RPG, EnumPlataforma.PC, EnumQuantidadeJogadores.MULTIPLAYER , "Um jogo de terror pra você fazer tudo e seu amigo HERJO ficar no caminhão moscando e se cagando de medo", 35.90);
         conta1.depositar(1000);
         System.out.println(conta1);
         System.out.println(Dead_by_Daylight);
@@ -21,6 +21,8 @@ public class Sistema {
         conta2.visualizarJogos();
         conta2.depositar(500);
         Sistema.comprarJogo(conta2, Dead_by_Daylight);
+        conta2.visualizarJogos();
+        Sistema.comprarJogo(conta2, Phasmophobia);
         conta2.visualizarJogos();
         
         

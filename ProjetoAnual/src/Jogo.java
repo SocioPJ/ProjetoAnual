@@ -2,13 +2,13 @@ public class Jogo implements IGerarDesconto {
     private final String nome;
     private final EnumTipoDeJogo tipoJogo;
     private final EnumPlataforma plataforma;
-    private final int quantidadeDeJogadores;
+    private final EnumQuantidadeJogadores quantidadeJogadores;
     private final String descricao;
     private final double preco;
-    public Jogo(String nome, EnumTipoDeJogo tipoJogo,EnumPlataforma plataforma, int quantidadeDeJogadores, String descricao, double preco) {
+    public Jogo(String nome, EnumTipoDeJogo tipoJogo,EnumPlataforma plataforma, EnumQuantidadeJogadores quantidadeJogadores, String descricao, double preco) {
         this.nome = nome;
         this.tipoJogo = tipoJogo;
-        this.quantidadeDeJogadores = quantidadeDeJogadores;
+        this.quantidadeJogadores = quantidadeJogadores;
         this.plataforma = plataforma;
         this.descricao = descricao;
         this.preco = preco;
@@ -20,8 +20,8 @@ public class Jogo implements IGerarDesconto {
     public EnumTipoDeJogo getTipoJogo() {
         return tipoJogo;
     }
-    public int getQuantidadeDeJogadores() {
-        return quantidadeDeJogadores;
+    public EnumQuantidadeJogadores getQuantidadeJogadores() {
+        return quantidadeJogadores;
     }
     public String getDescricao() {
         return descricao;
@@ -42,7 +42,7 @@ public class Jogo implements IGerarDesconto {
         System.out.println("==========| Jogo |==========");
         return "Nome do Jogo: " + nome + "\n"
                 + "Tipo de Jogo : " + tipoJogo + "\n"
-                + "Quantidade de Jogadores : " + quantidadeDeJogadores + "\n"
+                + "Quantidade de Jogadores : " + quantidadeJogadores + "\n"
                 + "Plataforma : " + plataforma + "\n"
                 + "Descrição : " + descricao + "\n"
                 + "Preço : " + "R$ " + preco;
