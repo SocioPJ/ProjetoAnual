@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 public class Sistema {
     public static void run(){
         Usuario usuario1 = new Usuario("João", "jpsocio45@gmail.com", "01/01/2000");
@@ -13,5 +13,16 @@ public class Sistema {
         System.out.println(conta1);
         System.out.println("\n");
         System.out.println(jogo_dbd);
-        }
+        double desconto = jogo_dbd.getPreco()-(jogo_dbd.gerarDesconto(jogo_dbd));        
+        System.out.println("Desconto: " + "R$ " + desconto);
+    }
+    public static boolean comprarJogo(Conta conta, Jogo jogo){
+        if(conta.getSaldo() < jogo.getPreco() || conta.getSaldo() < 0)
+            System.out.println("Saldo insuficiente!");
+            return false;
+        conta.setSaldo(conta.getSaldo() - jogo.getPreco());
+        System.out.println("Compra realizada com sucesso!");
+            return true;
+        
+    }
 }

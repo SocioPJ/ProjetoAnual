@@ -32,12 +32,7 @@ public class Conta {
         this.saldo += valor;
         return true;
     }
-    public boolean comprar(String jogo){
-        if(this.saldo < 0)
-            return false;
-        //this.saldo -= jogo.getPreco();
-        return true;
-    }
+    
     public static int gerarNumeroDaConta() {
         Random random = new Random();
         int numero = random.nextInt(10000);
@@ -50,5 +45,8 @@ public class Conta {
                 + "\nSaldo : " + "R$ " + saldo
                 + "\nNumero da conta : " + numeroDaConta;
 
+    }
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 }

@@ -34,17 +34,17 @@ public class Jogo implements IGerarDesconto {
     }
     @Override
     public double gerarDesconto(Jogo jogo) {
-        return getPreco()*0.9;
+        return jogo.getPreco() * 0.9;
     }
 
     @Override
     public String toString() {
-        
+        System.out.println("==========| Jogo |==========");
         return "Nome do Jogo: " + nome + "\n"
                 + "Tipo de Jogo : " + tipoJogo + "\n"
                 + "Quantidade de Jogadores : " + quantidadeDeJogadores + "\n"
                 + "Plataforma : " + plataforma + "\n"
                 + "Descrição : " + descricao + "\n"
-                + "Preço : " + preco;
+                + "Preço : " + "R$ " + preco;
     }
 }
