@@ -6,6 +6,7 @@ public class Conta {
     private double saldo;
     private int numeroDaConta = Conta.gerarNumeroDaConta();
     
+    
     public Conta(Usuario usuario, String senha) {
         this.usuario = usuario;
         this.senha = senha;
@@ -34,7 +35,7 @@ public class Conta {
     public boolean comprar(String jogo){
         if(this.saldo < 0)
             return false;
-        this.saldo -= jogo.getPreco();
+        //this.saldo -= jogo.getPreco();
         return true;
     }
     public static int gerarNumeroDaConta() {
