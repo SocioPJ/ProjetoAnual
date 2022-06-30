@@ -3,11 +3,11 @@ import java.util.Random;
 public class Conta {
     private Usuario usuario;
     private String senha;
-    private double saldo;
+    double saldo = 0;
     private int numeroDaConta = Conta.gerarNumeroDaConta();
     
     
-    public Conta(Usuario usuario, String senha) {
+    public Conta(Usuario usuario, String senha, double saldo) {
         this.usuario = usuario;
         this.senha = senha;
     }
