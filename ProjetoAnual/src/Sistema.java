@@ -1,3 +1,4 @@
+
 public class Sistema {
     public static void run(){
         Usuario usuario1 = new Usuario("João", "jpsocio45@gmail.com", "01/01/2000");
@@ -6,7 +7,8 @@ public class Sistema {
         Conta conta2 = new Conta(usuario2, "fefe6969xoxo");
         System.out.println(conta1);
         System.out.println(conta2);
-        System.out.println("\n");
-        
+        conta1.depositar(100);
+        System.out.println(conta1);
+        conta1.visualizarSaldo();
     }
 }
