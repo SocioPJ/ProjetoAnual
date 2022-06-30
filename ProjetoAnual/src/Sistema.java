@@ -16,7 +16,7 @@ public class Sistema {
         Sistema.comprarJogo(conta2, jogo_dbd);
         conta2.depositar(75);
         System.out.println(conta2);
-
+        conta1.visualizarJogos();
         
         
     }
@@ -26,6 +26,8 @@ public class Sistema {
         }
         else{
             conta.setSaldo(conta.getSaldo() - jogo.getPreco());
+            conta.setQuantidade_jogos(conta.getQuantidade_jogos() + 1);
+            conta.getJogos_conta()[conta.getQuantidade_jogos() - 1] = jogo.getNome();
             System.out.println("Compra realizada com sucesso!");
             System.out.println("Saldo atual: " + "R$ " + conta.getSaldo());
         }
