@@ -84,8 +84,11 @@ public class Conta {
         if (contem == false){
             System.out.println("Você não possui esse jogo");}
         else {
-            long startTime = System.nanoTime();
-            System.out.println(startTime);
+            //long startTime = System.nanoTime();
+            //long endTime = System.nanoTime() - startTime;
+             
+            
+        
             //setHoras_jogadas(horas_jogadas);
         }
        
