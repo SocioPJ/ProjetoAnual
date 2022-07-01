@@ -81,18 +81,19 @@ public class Conta {
 
     public void jogarJogo(Jogo jogo){
         boolean contem = Arrays.stream(jogos_conta).anyMatch(jogo.getNome()::equals); // Procura se o jogo já está na conta
-        if (contem == false){
-            System.out.println("Você não possui esse jogo");}
-        else {
-            //long startTime = System.nanoTime();
-            //long endTime = System.nanoTime() - startTime;
-             
-            
-        
-            //setHoras_jogadas(horas_jogadas);
+        if (contem == false)
+        {
+            System.out.println("Você não possui esse jogo");
         }
-       
+        else 
+        {
+            
+        }
     }
+
+    
+    
+    
     @Override
     public String toString() {
         System.out.println("==========| Conta |==========");

@@ -14,7 +14,7 @@ public class Sistema {
         Sistema.comprarJogo(conta2, Dead_by_Daylight);
         conta2.visualizarSaldo();
         conta2.jogarJogo(Dead_by_Daylight);
-        
+        MouseEvent.main(null);        
         
     }
     public static void comprarJogo(Conta conta, Jogo jogo){
