@@ -37,6 +37,19 @@ public class Jogo implements IGerarDesconto {
         return jogo.getPreco() * 0.9;
     }
 
+    public void visualizarInfJogo() {
+        System.out.println("=================Informações do jogo=================");
+        System.out.println("Nome: " + getNome());
+        System.out.println("Gênero: " + getTipoJogo());
+        System.out.println("Plataforma: " + getPlataforma());
+        System.out.println("Quantidade de jogadores: " + getQuantidadeJogadores());
+        System.out.println("Descrição: " + getDescricao());
+        System.out.println("Preço: " + "R$ " + getPreco());
+        System.out.println("=====================================================\n");
+    }
+
+
+
     @Override
     public String toString() {
         System.out.println("==========| Jogo |==========");
