@@ -10,6 +10,7 @@ public class Sistema {
         Jogo Phasmophobia = new Jogo("Phasmophobia",EnumTipoDeJogo.HORROR, EnumPlataforma.PC, EnumQuantidadeJogadores.MULTIPLAYER , "Um jogo de terror pra você fazer tudo e seu amigo HERJO ficar no caminhão moscando e se cagando de medo", 35.90);
         Phasmophobia.visualizarInfJogo();
         Dead_by_Daylight.visualizarInfJogo();
+        System.out.println("Desconto: " + Dead_by_Daylight.gerarDesconto());
         
     }
 

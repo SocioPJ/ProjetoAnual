@@ -33,8 +33,8 @@ public class Jogo implements IGerarDesconto {
         return plataforma;
     }
     @Override
-    public double gerarDesconto(Jogo jogo) {
-        return jogo.getPreco() * 0.9;
+    public double gerarDesconto() {
+        return  Jogo.this.getPreco() * 0.9;
     }
 
     public void visualizarInfJogo() {
