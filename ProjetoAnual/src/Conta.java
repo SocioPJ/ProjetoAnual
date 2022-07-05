@@ -85,13 +85,19 @@ public class Conta {
         {
             System.out.println("Você não possui esse jogo");
         }
-        else 
-        {
-            
-        }
+       
     }
 
-    
+    public void ComprarJogo(Jogo jogo){
+        if (getSaldo() < jogo.getPreco()) {
+            System.out.println("Você não possui saldo suficiente para comprar esse jogo");
+        } else {
+            this.saldo -= jogo.getPreco();
+            this.jogos_conta[quantidade_jogos] = jogo.getNome();
+            this.quantidade_jogos++;
+            System.out.println("Compra realizada com sucesso");
+        }
+    }
     
     
     @Override
